@@ -8,9 +8,9 @@ menu:
     url: /categories
     #icon: fas fa-bookmark
     children:
-      - name: Linux
-        url: categories/embedded/
-        icon: fab fa-linux
+      - name: 建站
+        url: categories/website
+        icon: fas fa-cloud
   Tags:
     url: /tags
     #icon: fas fa-tags
