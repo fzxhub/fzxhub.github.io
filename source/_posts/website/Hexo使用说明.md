@@ -26,20 +26,24 @@ tags:
 ## 安装hexo
 
 所有必备的应用程序安装完成后，即可使用 npm 安装 Hexo。
-```
+
+```bash
 $ npm install -g hexo-cli 
 ```
+
 ## 建站
 
 1. 安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。
-```
+
+```bash
 $ hexo init <folder>
 $ cd <folder>
 $ npm install
 ```
+
 2. 新建完成后，指定文件夹的目录如下：
 
-```
+```bash
 .
 ├── _config.yml
 ├── package.json
@@ -49,16 +53,22 @@ $ npm install
 |   └── _posts
 └── themes
 ```
+
 3. 本地预览
-```
+
+```bash
 $ hexo server
 ```
+
 4. 推到远端
-```
+
+```bash
 $ hexo clean && hexo deploy
 ```
+
 推到远端前提配置
-```
+
+```yaml
 deploy:
   type: git
   repo: 仓库地址

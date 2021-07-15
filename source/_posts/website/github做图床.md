@@ -20,6 +20,7 @@ tags:
 
 ## 访问
 1. 使用开源jsdelivr的cdn进行访问，可以加快速度。
+
 ```
 https://cdn.jsdelivr.net/gh/{github用户名}/{github仓库名}@{仓库分支名}/文件名
 ```
