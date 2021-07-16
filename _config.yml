@@ -114,4 +114,4 @@ search:
 
 permalink_pinyin:
   enable: true
-  separator: '-' # default: '-'
+  separator: '-'

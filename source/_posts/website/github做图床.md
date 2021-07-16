@@ -7,7 +7,7 @@ img:
 summary: 使用github仓库做图床，使用开源jsdelivr的cdn进行加速，测试效果不错。👍👍👍👍👍👍
 categories: website
 tags:
-  - hexo
+  - Hexo
   - github
   - 图床
 ---

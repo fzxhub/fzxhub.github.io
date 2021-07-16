@@ -7,7 +7,7 @@ img:
 summary: Hexo建站使用说明，记录我最常使用的指令和逻辑。后续持续更新中。
 categories: website
 tags:
-  - hexo
+  - Hexo
 ---
 
 ## 前提
