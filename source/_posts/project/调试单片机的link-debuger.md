@@ -34,15 +34,15 @@ tags:
 
 ## 实物展示
 
-![avatar](https://cdn.jsdelivr.net/gh/fzxhub/image_bed_site@main/link/links2.jpg)
+![link实物](https://cdn.jsdelivr.net/gh/fzxhub/image_bed_site@main/link/links2.jpg)
 
-![avatar](https://cdn.jsdelivr.net/gh/fzxhub/image_bed_site@main/link/links1.jpg)
+![link实物](https://cdn.jsdelivr.net/gh/fzxhub/image_bed_site@main/link/links1.jpg)
 
-![avatar](https://cdn.jsdelivr.net/gh/fzxhub/image_bed_site@main/link/links3.jpg)
+![link实物](https://cdn.jsdelivr.net/gh/fzxhub/image_bed_site@main/link/links3.jpg)
 
 ## 底板3D图
 
-![avatar](https://cdn.jsdelivr.net/gh/fzxhub/image_bed_site@main/link/link4.png)
+![底板3D图](https://cdn.jsdelivr.net/gh/fzxhub/image_bed_site@main/link/link4.png)
 
 ## 功能
 
@@ -88,7 +88,7 @@ tags:
 
 ### **接口定义**
 
-![avatar](https://cdn.jsdelivr.net/gh/fzxhub/image_bed_site@main/link/link3.png)
+![接口定义图](https://cdn.jsdelivr.net/gh/fzxhub/image_bed_site@main/link/link3.png)
 
 ## 支持固件类型
 
@@ -156,7 +156,7 @@ tags:
 
 9. 20PIN的JTAG接口（只支持SWD，默认不焊接，焊接20PIN贴片插针或者牛角座即可使用）
 
-![avatar](https://cdn.jsdelivr.net/gh/fzxhub/image_bed_site@main/link/link5.png)
+![顶部3D图](https://cdn.jsdelivr.net/gh/fzxhub/image_bed_site@main/link/link5.png)
 
 ## 固件切换
 1. 使用自己的STLINK与link_debuger的5.0V、SWD、SCK、GND连接。
@@ -164,18 +164,18 @@ tags:
 2. 打开STM32 ST-LINK Utility
 
 3. 连接设备
-![avatar](https://cdn.jsdelivr.net/gh/fzxhub/image_bed_site@main/link/prog1.png)
+![连接设备](https://cdn.jsdelivr.net/gh/fzxhub/image_bed_site@main/link/prog1.png)
 
 4. 打开文件
-![avatar](https://cdn.jsdelivr.net/gh/fzxhub/image_bed_site@main/link/prog2.png)
+![打开文件](https://cdn.jsdelivr.net/gh/fzxhub/image_bed_site@main/link/prog2.png)
 
 5. 选择固件（DAP选择bootloader）
-![avatar](https://cdn.jsdelivr.net/gh/fzxhub/image_bed_site@main/link/prog3.png)
+![选择固件](https://cdn.jsdelivr.net/gh/fzxhub/image_bed_site@main/link/prog3.png)
 
 6. 开始编程
-![avatar](https://cdn.jsdelivr.net/gh/fzxhub/image_bed_site@main/link/prog4.png)
+![开始编程](https://cdn.jsdelivr.net/gh/fzxhub/image_bed_site@main/link/prog4.png)
 
 7. 点击start、等待进度条完成后即可使用
-![avatar](https://cdn.jsdelivr.net/gh/fzxhub/image_bed_site@main/link/prog5.png)
-![avatar](https://cdn.jsdelivr.net/gh/fzxhub/image_bed_site@main/link/prog6.png)
+![点击start](https://cdn.jsdelivr.net/gh/fzxhub/image_bed_site@main/link/prog5.png)
+![等待进度条](https://cdn.jsdelivr.net/gh/fzxhub/image_bed_site@main/link/prog6.png)
 
