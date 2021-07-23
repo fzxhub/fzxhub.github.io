@@ -16,7 +16,7 @@ tags:
 ## 资源链接
 
 - **博客网站：**[**fzxhub**](https://fzxhub.com)
-- **代码仓库：**[**fzxhub/lvgl_sim_vscode**](https://github.com/fzxhub/lv_sim_vscode)
+- **代码仓库：**[**fzxhub/lvgl_sim_vscode**](https://github.com/fzxhub/lvgl_sim_vscode)
 
 ## 简介
 LGVL是一个开源的嵌入式GUI，可以方面进行嵌入式的图形界面开发。
