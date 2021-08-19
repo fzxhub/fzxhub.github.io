@@ -8,31 +8,66 @@ menu:
     url: /categories
     #icon: fas fa-bookmark
     children:
-      - name: 建站
+      - name: 建站经验
         url: categories/website
         icon: fas fa-cloud
-  Tags:
-    url: /tags
-    #icon: fas fa-tags
-  Archives:
+      - name: 开发项目
+        url: categories/project
+        icon: fas fa-code-branch
+      - name: LGVL_GUI
+        url: categories/lgvl
+        icon: far fa-grin-tongue-squint
+      
+  归档:
     url: /archives
-    #icon: fas fa-archive
-  About:
-    url: /about
-    #icon: fas fa-user-circle
-#  Contact:
-#    url: /contact
-    #icon: fas fa-comments
-  链接:
-    url: /friends
-  站点:
     children:
-      - name: 中国站
-        url: https://fzxhub.cn
-        icon: fas fa-globe-asia
-      - name: 国际站
-        url: https://fzxhub.com
-        icon: fas fa-globe-americas
+      - name: 日历归档
+        url: /archives
+        icon: far fa-calendar-alt
+      - name: 标签归档
+        url: /tags
+        icon: fas fa-tags
+
+  关于:
+    url: /about
+    children:
+      - name: 关于博主
+        url: /about
+        icon: far fa-address-card
+      - name: 友情链接
+        url: /friends
+        icon: fas fa-link
+
+
+  #Tags:
+    #url: /tags
+    #icon: fas fa-tags
+  #Archives:
+    #url: /archives
+    #icon: fas fa-archive
+  #About:
+    #url: /about
+    #icon: fas fa-user-circle
+  #Contact:
+    #url: /contact
+    #icon: fas fa-comments
+  #链接:
+    #url: /friends
+  中国站:
+    url: https://fzxhub.gitee.io
+    icon: fas fa-globe-asia
+  国际站:
+    url: https://fzxhub.com
+    icon: fas fa-globe-americas
+
+  #站点:
+    #children:
+      #- name: 中国站
+        #url: https://fzxhub.cn
+        #icon: fas fa-globe-asia
+      #- name: 国际站
+        #url: https://fzxhub.com
+        #icon: fas fa-globe-americas
     #icon: fas fa-address-book
   # 二级菜单写法如下
   #Medias:

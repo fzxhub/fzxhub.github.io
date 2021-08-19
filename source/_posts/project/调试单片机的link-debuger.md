@@ -12,7 +12,8 @@ tags:
   - 单片机
 ---
 
-[GitHub](https://github.com/fzxhub/link_debuger_open)
+仓库地址：[GitHub](https://github.com/fzxhub/link_debuger_open)
+个人博客：[国际站:fzxhub.com](https://fzxhub.com) [中国站:fzxhub.gitee.io](https://fzxhub.gitee.io)
 
 ## 简介
 本项目是一个link debuger，用于调试带有JTAG、SWD接口的微控制器。由于SWD接口的优势，以及本项目宗旨是做一个美观、小巧、功能全的调试器，因此查阅了许多开源电路、开源固件。最终做了该PCB。由上下两层PCB通过铜柱连接在一起。铜柱复用为上下板供电线路。
