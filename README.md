@@ -7,3 +7,5 @@
 
 > 使用Hexo建站
 > 使用hexo-theme-matery主题
+
+推送命令：hexo clean && hexo deploy

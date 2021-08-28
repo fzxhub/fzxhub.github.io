@@ -263,17 +263,17 @@ myProjects:
     link_debuger:
       icon: fas fa-bug
       iconBackground: 'linear-gradient(to bottom right, #66BB6A 0%, #81C784 100%)'
-      url: http://github.com/fzxhub/link_debuger_open
+      url: http://github.com/fzxhub/link_debuger
       desc: 这是一个基于DAPlink制作的多功能的单片机调试器
-    highspeed_fpga_ft232:
+    usb_fpga:
         icon: fab fa-usb
         iconBackground: 'linear-gradient(to bottom right, #F06292 0%, #EF5350 100%)'
-        url: https://github.com/fzxhub/highspeed_fpga_ft232
+        url: https://github.com/fzxhub/usb_fpga
         desc: 这是一个通过FT232连接PC和FPGA进行高速通信的项目。
-    crc_noos_mode:
+    crc_module:
         icon: fas fa-file-alt
         iconBackground: 'linear-gradient(to bottom right, #29B6F6 0%, #1E88E5 100%)'
-        url: https://github.com/fzxhub/crc_noos_mode
+        url: https://github.com/fzxhub/crc_module
         desc: 这是一个单片机可用的CRC校验实现模块
 
 # config my skills informations in about page.
