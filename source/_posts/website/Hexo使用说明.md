@@ -4,7 +4,7 @@ date: 2021-07-13
 author: fzxhub
 cover: true
 img: 
-summary: Hexo建站使用说明，记录我最常使用的指令和逻辑。后续持续更新中。
+summary: Hexo建站使用说明，记录我最常使用的指令防止忘记怎么使用。
 categories: website
 tags:
   - Hexo

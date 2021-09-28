@@ -1,5 +1,5 @@
 ---
-title: 在Macos/Linux的Vscode中模拟LGVL
+title: 在Macos和Linux的Vscode中模拟LGVL
 date: 2021-07-32
 author: fzxhub
 cover: true

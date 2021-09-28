@@ -4,7 +4,7 @@ date: 2021-07-8 13:34:00
 author: fzxhub
 cover: true
 img: https://cdn.jsdelivr.net/gh/fzxhub/image_bed@main/link/link4.png
-summary: 这是一个小巧、多功能调试单片机的link-debuger，支持调试STM32、ESP32等单片机，支持SWD接口、2个UART接口。
+summary: 一个小巧、多功能调试STM32、ESP32等单片机的link-debuger。
 categories: project
 tags:
   - link

@@ -4,7 +4,7 @@ date: 2021-07-13
 author: fzxhub
 cover: true
 img: 
-summary: 使用github仓库做图床，使用开源jsdelivr的cdn进行加速，测试效果不错。👍👍👍👍👍👍
+summary: 使用github仓库做图床，开源jsdelivr的cdn加速，效果不错。👍
 categories: website
 tags:
   - Hexo

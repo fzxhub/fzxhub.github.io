@@ -8,15 +8,21 @@ menu:
     url: /categories
     #icon: fas fa-bookmark
     children:
-      - name: 建站经验
+      - name: 网站建设
         url: categories/website
-        icon: fas fa-cloud
-      - name: 开发项目
+        icon: fas fa-wifi
+      - name: 项目开发
         url: categories/project
         icon: fas fa-code-branch
-      - name: LGVL_GUI
+      - name: LGVL设计
         url: categories/lgvl
         icon: far fa-grin-tongue-squint
+      - name: ESP32开发
+        url: categories/esp32
+        icon: far fa-circle
+      - name: GIT管理
+        url: categories/git
+        icon: fas fa-code-branch
       
   归档:
     url: /archives
@@ -26,7 +32,7 @@ menu:
         icon: far fa-calendar-alt
       - name: 标签归档
         url: /tags
-        icon: fas fa-tags
+        icon: far fa-bookmark
 
   关于:
     url: /about

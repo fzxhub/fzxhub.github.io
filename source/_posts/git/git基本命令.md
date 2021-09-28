@@ -4,7 +4,7 @@ date: 2021-09-26
 author: fzxhub
 cover: true
 img: 
-summary: 记录一下git的基本命令，以防后续用到，部分来自阮一峰老师的博客文章《常用 Git 命令清单》。
+summary: git的基本命令存档，部分来自阮一峰老师《常用 Git 命令清单》。
 categories: git
 tags:
   - git

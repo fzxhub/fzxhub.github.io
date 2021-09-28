@@ -4,7 +4,7 @@ date: 2021-09-26
 author: fzxhub
 cover: true
 img: https://cdn.jsdelivr.net/gh/fzxhub/image_bed@main/esp32/anzhuang.jpg
-summary: 最近想了解一下官方SDK的开发方式，在搭建esp32的环境中遇到许多问题。国内在GitHub获取资源容易失败。因此有了国内linux和macos搭建esp32的开发环境。
+summary: 解决在国内搭建esp32的环境中容易失败的问题，亲测成功。
 categories: esp32
 tags:
   - esp32
@@ -35,6 +35,7 @@ esp32开发方式有许多
 
 在linux或者macos中搭建esp32的环境，先要安装一些基础工具，如python等等。macos可以使用Homebrew、macports安装相关的工具以及依赖。如果部分工具已经安装过可以直接跳过。
 - linux
+
 ``` shell
 apt purge vim-common
 apt install vim
@@ -44,6 +45,7 @@ apt install python3-setuptools cmake ninja-build ccache
 apt install libffi-dev libssl-dev dfu-util libusb-1.0-0
 ```
 - macos
+
 ``` shell
 brew install vim
 ```
@@ -53,6 +55,7 @@ brew install vim
 esp-idf项目是分子模块进行团队开发的SDK。因此直接克隆的仓库不能直接使用需要将子模块也克隆才能使用，我在这里卡了许久。遇到问题，使用多注意命令行的提示，对应想办法解决。
 
 - linux、macos
+
 ``` shell
 #方案一：这是直接递归克隆乐鑫在GitHub上的esp-idf仓库，但是国内容易失败，可以试试
 git clone --recursive  https://github.com/espressif/esp-idf.git
@@ -75,6 +78,7 @@ git clone https://gitee.com/EspressifSystems/esp-gitee-tools.git
 esp-idf包有了，需要安装esp32的编译器、调试器等等工具，其实些工具就是gcc、openocd等工具，这些工具主要是官方根据esp32修改过的定制版本。在esp-idf中，官方为我们写好下载脚本。我们只要执行脚本文件就可以安装了。esp32有esp32、esp32s2、esp32s3等等系列。我们可选系列安装或者全安装。这里我全安装
 
 - linux、macos
+
 ``` shell
 #设置从乐鑫官方下载方式
 export IDF_GITHUB_ASSETS="dl.espressif.com/github_assets"
@@ -91,6 +95,7 @@ export IDF_GITHUB_ASSETS="dl.espressif.com/github_assets"
 此时，您刚刚安装的工具尚未添加至 PATH 环境变量，无法通过“命令窗口”使用这些工具。因此，必须设置一些环境变量，这可以通过 ESP-IDF 提供的另一个脚本完成。
 
 - linux、macos
+
 ``` shell
 #设置环境变量
 . .export.sh
