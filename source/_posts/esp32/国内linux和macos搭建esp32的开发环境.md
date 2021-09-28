@@ -3,7 +3,7 @@ title: 国内linux和macos搭建esp32的开发环境
 date: 2021-09-26
 author: fzxhub
 cover: true
-img: 
+img: https://cdn.jsdelivr.net/gh/fzxhub/image_bed@main/esp32/anzhuang.jpg
 summary: 最近想了解一下官方SDK的开发方式，在搭建esp32的环境中遇到许多问题。国内在GitHub获取资源容易失败。因此有了国内linux和macos搭建esp32的开发环境。
 categories: esp32
 tags:

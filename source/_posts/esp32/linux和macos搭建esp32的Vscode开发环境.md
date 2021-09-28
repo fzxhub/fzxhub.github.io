@@ -3,7 +3,7 @@ title: linux和macos搭建esp32的Vscode开发环境
 date: 2021-09-28
 author: fzxhub
 cover: true
-img: 
+img: https://cdn.jsdelivr.net/gh/fzxhub/image_bed@main/esp32/anzhuang.jpg
 summary: 国内linux和macos搭建esp32的开发环境之后续，使用Vscode环境继续
 categories: esp32
 tags:
