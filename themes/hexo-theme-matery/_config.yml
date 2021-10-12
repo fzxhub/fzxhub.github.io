@@ -186,12 +186,13 @@ indexbtn:
 # 首页 banner 中的第二行个人信息配置，留空即不启用
 socialLink:
   github:  https://github.com/fzxhub
-  email: fzxhub@gmail.com
+  email: fzxhub@fzxmail.com
+  zhihu: https://www.zhihu.com/people/fzxhub
+
   facebook: # https://www.facebook.com/xxx
   twitter: # https://twitter.com/xxx
   qq: 
   weibo: # https://weibo.com/xxx
-  zhihu: # https://www.zhihu.com/xxx
   rss: false # true、false
 
 # Whether to activate the Post TOC, and Configure which title types are supported by TOC support.
@@ -266,22 +267,26 @@ profile:
 myProjects:
   enable: true
   data:
+    link_logic:
+        icon: fas fa-drafting-compass
+        iconBackground: 'linear-gradient(to bottom right, #66BB6A 0%, #81C784 100%)'
+        url: https://github.com/fzxhub/link_logic
+        desc: 这是一个逻辑分析仪、单片机调试器、串口调试一体的工具
     link_debuger:
       icon: fas fa-bug
-      iconBackground: 'linear-gradient(to bottom right, #66BB6A 0%, #81C784 100%)'
+      iconBackground: 'linear-gradient(to bottom right, #F06292 0%, #EF5350 100%)'
       url: http://github.com/fzxhub/link_debuger
       desc: 这是一个基于DAPlink制作的多功能的单片机调试器
     usb_fpga:
         icon: fab fa-usb
-        iconBackground: 'linear-gradient(to bottom right, #F06292 0%, #EF5350 100%)'
+        iconBackground: 'linear-gradient(to bottom right, #29B6F6 0%, #1E88E5 100%)'
         url: https://github.com/fzxhub/usb_fpga
-        desc: 这是一个通过FT232连接PC和FPGA进行高速通信的项目。
+        desc: 这是一个通过FT232连接PC和FPGA进行高速通信的项目
     crc_module:
         icon: fas fa-file-alt
-        iconBackground: 'linear-gradient(to bottom right, #29B6F6 0%, #1E88E5 100%)'
+        iconBackground: 'linear-gradient(to bottom right, #66BB6A 0%, #81C784 100%)'
         url: https://github.com/fzxhub/crc_module
         desc: 这是一个单片机可用的CRC校验实现模块
-
 # config my skills informations in about page.
 # If you don't want to display this `My Skills` content, you can deactivate or delete this configuration.
 # 在“关于”页面配置"我的技能"信息，如果你不需要这些信息则可以将其设置为不激活或者将其删除.
