@@ -59,10 +59,10 @@ menu:
     #icon: fas fa-comments
   #链接:
     #url: /friends
-  中国站:
+  中国:
     url: https://fzxhub.gitee.io
     icon: fas fa-globe-asia
-  国际站:
+  全球:
     url: https://fzxhub.com
     icon: fas fa-globe-americas
 
