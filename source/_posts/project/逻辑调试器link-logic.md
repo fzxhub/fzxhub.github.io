@@ -16,7 +16,7 @@ tags:
 ## link_logic
 带link调试功能、串口调试、逻辑分析仪与一身的数字调试器 
 
-项目地址：[GitHub](https://github.com/fzxhub/link_debuger)
+项目地址：[GitHub](https://github.com/fzxhub/link_logic)
 个人博客：[全球:fzxhub.com](https://fzxhub.com) [中国:fzxhub.gitee.io](https://fzxhub.gitee.io)
 
 ## 简介
