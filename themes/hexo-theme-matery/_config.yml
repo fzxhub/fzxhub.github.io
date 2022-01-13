@@ -44,53 +44,16 @@ menu:
         url: /friends
         icon: fas fa-link
 
-
-  #Tags:
-    #url: /tags
-    #icon: fas fa-tags
-  #Archives:
-    #url: /archives
-    #icon: fas fa-archive
-  #About:
-    #url: /about
-    #icon: fas fa-user-circle
-  #Contact:
-    #url: /contact
-    #icon: fas fa-comments
-  #链接:
-    #url: /friends
-  中国:
-    url: https://fzxhub.gitee.io
-    icon: fas fa-globe-asia
-  全球:
+  备用站点:
     url: https://fzxhub.com
     icon: fas fa-globe-americas
-
-  #站点:
-    #children:
-      #- name: 中国站
-        #url: https://fzxhub.cn
-        #icon: fas fa-globe-asia
-      #- name: 国际站
-        #url: https://fzxhub.com
-        #icon: fas fa-globe-americas
-    #icon: fas fa-address-book
-  # 二级菜单写法如下
-  #Medias:
-  #  icon: fas fa-list
-  #  children:
-  #    - name: Musics
-  #      url: /musics
-  #      icon: fas fa-music
-  #    - name: Movies
-  #      url: /movies
-  #      icon: fas fa-film
-  #    - name: Books
-  #      url: /books
-  #      icon: fas fa-book
-  #    - name: Galleries
-  #      url: /galleries
-  #      icon: fas fa-image
+    children:
+      - name: vercel托管
+        url: https://fzxhub.com
+      - name: Gitee托管
+        url: https://fzxhub.gitee.io
+      - name: github托管
+        url: https://fzxhub.net
 
 # Website start time.
 # 站点运行开始时间.
