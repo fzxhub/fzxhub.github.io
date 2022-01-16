@@ -48,12 +48,15 @@ menu:
     url: https://fzxhub.com
     icon: fas fa-globe-americas
     children:
-      - name: vercel托管
+      - name: fzxhub.com(vercel)
         url: https://fzxhub.com
-      - name: Gitee托管
-        url: https://fzxhub.gitee.io
-      - name: github托管
+      - name: fzxhub.cn(vercel)
+        url: https://fzxhub.cn
+      - name: fzxhub.net(github)
         url: https://fzxhub.net
+      - name: gitee托管
+        url: https://fzxhub.gitee.io
+      
 
 # Website start time.
 # 站点运行开始时间.
