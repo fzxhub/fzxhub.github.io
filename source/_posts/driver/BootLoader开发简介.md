@@ -4,7 +4,7 @@ date: 2022-04-19 12:00:00
 author: fzxhub
 cover: true
 img: https://cdn.jsdelivr.net/gh/fzxhub/image_bed@main/boot/First.png
-summary: 单片机上BootLoader开发流程简单介绍
+summary: 单片机BootLoader开发介绍，并以NXP的S32系列的一款MCU举例说明。
 categories: driver
 tags:
   - BootLoader
