@@ -49,9 +49,9 @@
       
         <tags>
             
-            <tag> BootLoader </tag>
-            
             <tag> 单片机 </tag>
+            
+            <tag> BootLoader </tag>
             
         </tags>
       
@@ -76,9 +76,9 @@
       
         <tags>
             
-            <tag> 单片机 </tag>
-            
             <tag> link </tag>
+            
+            <tag> 单片机 </tag>
             
             <tag> logic </tag>
             
@@ -147,33 +147,6 @@
     
     
     <entry>
-      <title>国内linux和macos搭建esp32的开发环境</title>
-      <link href="/mcu/guo-nei-linux-he-macos-da-jian-esp32-de-kai-fa-huan-jing/"/>
-      <url>/mcu/guo-nei-linux-he-macos-da-jian-esp32-de-kai-fa-huan-jing/</url>
-      
-        <content type="html"><![CDATA[<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>esp32开发方式有许多</p><ol><li>如在Arduino软件中Arduino框架开发方式，网上有许多教程</li><li>在platformIO中进行Arduino或者idf方式开发，platformIO封装不错</li><li>使用官方idf在linux、macos、windows开发</li></ol><p>最近想了解一下官方SDK的开发方式，在搭建esp32的环境中遇到许多问题。</p><p>该搭建方案和官方文档配合查看，部分细节该文档未列出</p><p><a href="https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32/get-started/index.html#get-started-get-prerequisites">乐鑫官方文档</a></p><p><a href="https://github.com/fzxhub">GitHub</a></p><p><a href="https://fzxhub.com/">个人网站:国际</a></p><p><a href="https://fzxhub.gitee.io/">个人网站:中国</a></p><h2 id="第一步：基础工具安装"><a href="#第一步：基础工具安装" class="headerlink" title="第一步：基础工具安装"></a>第一步：基础工具安装</h2><p>在linux或者macos中搭建esp32的环境，先要安装一些基础工具，如python等等。macos可以使用Homebrew、macports安装相关的工具以及依赖。如果部分工具已经安装过可以直接跳过。</p><ul><li>linux</li></ul><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">apt</span> purge vim-common<span class="token function">apt</span> <span class="token function">install</span> <span class="token function">vim</span><span class="token function">apt</span> <span class="token function">install</span> <span class="token function">git</span><span class="token function">apt</span> <span class="token function">install</span> <span class="token function">git</span> <span class="token function">wget</span> flex bison gperf python3 python3-pip <span class="token function">apt</span> <span class="token function">install</span> python3-setuptools cmake ninja-build ccache <span class="token function">apt</span> <span class="token function">install</span> libffi-dev libssl-dev dfu-util libusb-1.0-0<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><ul><li>macos</li></ul><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">brew <span class="token function">install</span> <span class="token function">vim</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h2 id="第二步：克隆esp-idf仓库"><a href="#第二步：克隆esp-idf仓库" class="headerlink" title="第二步：克隆esp-idf仓库"></a>第二步：克隆esp-idf仓库</h2><p>esp-idf项目是分子模块进行团队开发的SDK。因此直接克隆的仓库不能直接使用需要将子模块也克隆才能使用，我在这里卡了许久。遇到问题，使用多注意命令行的提示，对应想办法解决。</p><ul><li>linux、macos</li></ul><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token comment">#方案一：这是直接递归克隆乐鑫在GitHub上的esp-idf仓库，但是国内容易失败，可以试试</span><span class="token function">git</span> clone --recursive  https://github.com/espressif/esp-idf.git<span class="token comment">#方案二：先克隆esp-idf仓库，然后拉取子模块</span><span class="token function">git</span> clone https://github.com/espressif/esp-idf.git<span class="token function">git</span> submodule update --init --recursive<span class="token comment">#方案三：1.这是使用国内gitee托管克隆仓库</span><span class="token function">git</span> clone https://gitee.com/EspressifSystems/esp-idf.git<span class="token comment">#方案三：2.克隆国内gitee的工具仓库</span><span class="token function">git</span> clone https://gitee.com/EspressifSystems/esp-gitee-tools.git<span class="token comment">#方案三：3.复制esp-gitee-tools中的submodule-update.sh到esp-idf，然后执行submodule-update.sh</span>./submodule-update.sh<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>备注：</p><ol><li>这一步主要思想就是将就是将官方的esp-idf仓库完整克隆下来，在这个过程中不能报错，大家也可以查看该仓库中的.gitmodules中看看有哪些子模块。在这些模块在该项目的位置在GitHub中是以超链接的方式链接的。只克隆esp-idf到本地时，这些文件夹是空的，我们只要想办法将这些空文件夹中的内容填进去就可以，各种办法都可以。</li><li>官方文档是引导我们在～/文件夹建立一个esp文件夹，然后将esp-idf放入其中，建议大家都这样做。</li></ol><h2 id="第三步：安装编译器、调试器等工具"><a href="#第三步：安装编译器、调试器等工具" class="headerlink" title="第三步：安装编译器、调试器等工具"></a>第三步：安装编译器、调试器等工具</h2><p>esp-idf包有了，需要安装esp32的编译器、调试器等等工具，其实些工具就是gcc、openocd等工具，这些工具主要是官方根据esp32修改过的定制版本。在esp-idf中，官方为我们写好下载脚本。我们只要执行脚本文件就可以安装了。esp32有esp32、esp32s2、esp32s3等等系列。我们可选系列安装或者全安装。这里我全安装</p><ul><li>linux、macos</li></ul><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token comment">#设置从乐鑫官方下载方式</span><span class="token builtin class-name">export</span> <span class="token assign-left variable">IDF_GITHUB_ASSETS</span><span class="token operator">=</span><span class="token string">"dl.espressif.com/github_assets"</span><span class="token comment">#执行安装脚本</span>./install.sh<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>备注：</p><ol><li>当看到提示“You can now run：. .export.sh”,表示安装成功。</li><li>该步主要下载编译编译器、调试器等等工具，是下载工具包然后本地解压安装。如果依然失败，可以设置从乐鑫官方下载的方式，或者直接想办法下载安装包到指定目录等等方式尝试。</li></ol><h2 id="第四步：设置环境变量"><a href="#第四步：设置环境变量" class="headerlink" title="第四步：设置环境变量"></a>第四步：设置环境变量</h2><p>此时，您刚刚安装的工具尚未添加至 PATH 环境变量，无法通过“命令窗口”使用这些工具。因此，必须设置一些环境变量，这可以通过 ESP-IDF 提供的另一个脚本完成。</p><ul><li>linux、macos</li></ul><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token comment">#设置环境变量</span><span class="token builtin class-name">.</span> .export.sh<span class="token comment">#如果当前不在esp-idf文件夹中</span><span class="token builtin class-name">.</span> ~/esp/esp-idf/export.sh<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>备注：</p><ol><li>当终端关闭后设置环境变量失效。需要再次运行export.sh设置。</li><li>可以使用方法设置成打开终端自动设置环境变量，自行查找方案。</li></ol><h2 id="第五步：编译、烧录、验证"><a href="#第五步：编译、烧录、验证" class="headerlink" title="第五步：编译、烧录、验证"></a>第五步：编译、烧录、验证</h2><p>复制esp-idf/examples/get-started/下的hello_world工程或者其他工程到自己的工作目录进行编译、烧录、验证工作。</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token comment">#到工作目录下</span><span class="token builtin class-name">cd</span> ~/esp/hello_world<span class="token comment">#设置目标芯片</span>idf.py set-target esp32<span class="token comment">#打开配置界面</span>idf.py menuconfig<span class="token comment">#编译</span>idf.py build<span class="token comment">#烧录</span>idf.py -p PORT <span class="token punctuation">[</span>-b BAUD<span class="token punctuation">]</span> flash<span class="token comment">#打开串口监视</span>idf.py -p PORT monitor<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
-      
-      
-      <categories>
-          
-          <category> mcu </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 嵌入式 </tag>
-            
-            <tag> esp32 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>git基本命令</title>
       <link href="/tools/git-ji-ben-ming-ling/"/>
       <url>/tools/git-ji-ben-ming-ling/</url>
@@ -193,6 +166,33 @@
             <tag> git </tag>
             
             <tag> 工具 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>国内linux和macos搭建esp32的开发环境</title>
+      <link href="/mcu/guo-nei-linux-he-macos-da-jian-esp32-de-kai-fa-huan-jing/"/>
+      <url>/mcu/guo-nei-linux-he-macos-da-jian-esp32-de-kai-fa-huan-jing/</url>
+      
+        <content type="html"><![CDATA[<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>esp32开发方式有许多</p><ol><li>如在Arduino软件中Arduino框架开发方式，网上有许多教程</li><li>在platformIO中进行Arduino或者idf方式开发，platformIO封装不错</li><li>使用官方idf在linux、macos、windows开发</li></ol><p>最近想了解一下官方SDK的开发方式，在搭建esp32的环境中遇到许多问题。</p><p>该搭建方案和官方文档配合查看，部分细节该文档未列出</p><p><a href="https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32/get-started/index.html#get-started-get-prerequisites">乐鑫官方文档</a></p><p><a href="https://github.com/fzxhub">GitHub</a></p><p><a href="https://fzxhub.com/">个人网站:国际</a></p><p><a href="https://fzxhub.gitee.io/">个人网站:中国</a></p><h2 id="第一步：基础工具安装"><a href="#第一步：基础工具安装" class="headerlink" title="第一步：基础工具安装"></a>第一步：基础工具安装</h2><p>在linux或者macos中搭建esp32的环境，先要安装一些基础工具，如python等等。macos可以使用Homebrew、macports安装相关的工具以及依赖。如果部分工具已经安装过可以直接跳过。</p><ul><li>linux</li></ul><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">apt</span> purge vim-common<span class="token function">apt</span> <span class="token function">install</span> <span class="token function">vim</span><span class="token function">apt</span> <span class="token function">install</span> <span class="token function">git</span><span class="token function">apt</span> <span class="token function">install</span> <span class="token function">git</span> <span class="token function">wget</span> flex bison gperf python3 python3-pip <span class="token function">apt</span> <span class="token function">install</span> python3-setuptools cmake ninja-build ccache <span class="token function">apt</span> <span class="token function">install</span> libffi-dev libssl-dev dfu-util libusb-1.0-0<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><ul><li>macos</li></ul><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">brew <span class="token function">install</span> <span class="token function">vim</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h2 id="第二步：克隆esp-idf仓库"><a href="#第二步：克隆esp-idf仓库" class="headerlink" title="第二步：克隆esp-idf仓库"></a>第二步：克隆esp-idf仓库</h2><p>esp-idf项目是分子模块进行团队开发的SDK。因此直接克隆的仓库不能直接使用需要将子模块也克隆才能使用，我在这里卡了许久。遇到问题，使用多注意命令行的提示，对应想办法解决。</p><ul><li>linux、macos</li></ul><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token comment">#方案一：这是直接递归克隆乐鑫在GitHub上的esp-idf仓库，但是国内容易失败，可以试试</span><span class="token function">git</span> clone --recursive  https://github.com/espressif/esp-idf.git<span class="token comment">#方案二：先克隆esp-idf仓库，然后拉取子模块</span><span class="token function">git</span> clone https://github.com/espressif/esp-idf.git<span class="token function">git</span> submodule update --init --recursive<span class="token comment">#方案三：1.这是使用国内gitee托管克隆仓库</span><span class="token function">git</span> clone https://gitee.com/EspressifSystems/esp-idf.git<span class="token comment">#方案三：2.克隆国内gitee的工具仓库</span><span class="token function">git</span> clone https://gitee.com/EspressifSystems/esp-gitee-tools.git<span class="token comment">#方案三：3.复制esp-gitee-tools中的submodule-update.sh到esp-idf，然后执行submodule-update.sh</span>./submodule-update.sh<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>备注：</p><ol><li>这一步主要思想就是将就是将官方的esp-idf仓库完整克隆下来，在这个过程中不能报错，大家也可以查看该仓库中的.gitmodules中看看有哪些子模块。在这些模块在该项目的位置在GitHub中是以超链接的方式链接的。只克隆esp-idf到本地时，这些文件夹是空的，我们只要想办法将这些空文件夹中的内容填进去就可以，各种办法都可以。</li><li>官方文档是引导我们在～/文件夹建立一个esp文件夹，然后将esp-idf放入其中，建议大家都这样做。</li></ol><h2 id="第三步：安装编译器、调试器等工具"><a href="#第三步：安装编译器、调试器等工具" class="headerlink" title="第三步：安装编译器、调试器等工具"></a>第三步：安装编译器、调试器等工具</h2><p>esp-idf包有了，需要安装esp32的编译器、调试器等等工具，其实些工具就是gcc、openocd等工具，这些工具主要是官方根据esp32修改过的定制版本。在esp-idf中，官方为我们写好下载脚本。我们只要执行脚本文件就可以安装了。esp32有esp32、esp32s2、esp32s3等等系列。我们可选系列安装或者全安装。这里我全安装</p><ul><li>linux、macos</li></ul><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token comment">#设置从乐鑫官方下载方式</span><span class="token builtin class-name">export</span> <span class="token assign-left variable">IDF_GITHUB_ASSETS</span><span class="token operator">=</span><span class="token string">"dl.espressif.com/github_assets"</span><span class="token comment">#执行安装脚本</span>./install.sh<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>备注：</p><ol><li>当看到提示“You can now run：. .export.sh”,表示安装成功。</li><li>该步主要下载编译编译器、调试器等等工具，是下载工具包然后本地解压安装。如果依然失败，可以设置从乐鑫官方下载的方式，或者直接想办法下载安装包到指定目录等等方式尝试。</li></ol><h2 id="第四步：设置环境变量"><a href="#第四步：设置环境变量" class="headerlink" title="第四步：设置环境变量"></a>第四步：设置环境变量</h2><p>此时，您刚刚安装的工具尚未添加至 PATH 环境变量，无法通过“命令窗口”使用这些工具。因此，必须设置一些环境变量，这可以通过 ESP-IDF 提供的另一个脚本完成。</p><ul><li>linux、macos</li></ul><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token comment">#设置环境变量</span><span class="token builtin class-name">.</span> .export.sh<span class="token comment">#如果当前不在esp-idf文件夹中</span><span class="token builtin class-name">.</span> ~/esp/esp-idf/export.sh<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>备注：</p><ol><li>当终端关闭后设置环境变量失效。需要再次运行export.sh设置。</li><li>可以使用方法设置成打开终端自动设置环境变量，自行查找方案。</li></ol><h2 id="第五步：编译、烧录、验证"><a href="#第五步：编译、烧录、验证" class="headerlink" title="第五步：编译、烧录、验证"></a>第五步：编译、烧录、验证</h2><p>复制esp-idf/examples/get-started/下的hello_world工程或者其他工程到自己的工作目录进行编译、烧录、验证工作。</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token comment">#到工作目录下</span><span class="token builtin class-name">cd</span> ~/esp/hello_world<span class="token comment">#设置目标芯片</span>idf.py set-target esp32<span class="token comment">#打开配置界面</span>idf.py menuconfig<span class="token comment">#编译</span>idf.py build<span class="token comment">#烧录</span>idf.py -p PORT <span class="token punctuation">[</span>-b BAUD<span class="token punctuation">]</span> flash<span class="token comment">#打开串口监视</span>idf.py -p PORT monitor<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> mcu </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 嵌入式 </tag>
+            
+            <tag> esp32 </tag>
             
         </tags>
       
@@ -302,11 +302,11 @@
       
         <tags>
             
-            <tag> 单片机 </tag>
-            
             <tag> link </tag>
             
             <tag> debuger </tag>
+            
+            <tag> 单片机 </tag>
             
         </tags>
       
