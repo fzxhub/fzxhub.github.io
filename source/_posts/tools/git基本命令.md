@@ -5,7 +5,7 @@ author: fzxhub
 cover: true
 img: 
 summary: git的基本命令存档，部分来自阮一峰老师《常用 Git 命令清单》。
-categories: git
+categories: tools
 tags:
   - git
   - 工具

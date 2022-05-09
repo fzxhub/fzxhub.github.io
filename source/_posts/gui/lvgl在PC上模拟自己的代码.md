@@ -5,7 +5,7 @@ author: fzxhub
 cover: true
 img: 
 summary: LGVL是一个开源的嵌入式GUI，在PC上使用Vscode模拟自己的代码。
-categories: lgvl
+categories: gui
 tags:
   - lgvl
   - gui

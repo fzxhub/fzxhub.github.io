@@ -5,7 +5,7 @@ author: fzxhub
 cover: true
 img: 
 summary: LGVL是一个开源的嵌入式GUI，可以方面进行嵌入式的图形界面开发。
-categories: lgvl
+categories: gui
 tags:
   - lgvl
   - gui

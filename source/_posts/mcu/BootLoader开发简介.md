@@ -5,7 +5,7 @@ author: fzxhub
 cover: true
 img: https://cdn.jsdelivr.net/gh/fzxhub/image_bed@main/boot/First.png
 summary: 单片机BootLoader开发介绍，并以NXP的S32系列的一款MCU举例说明。
-categories: driver
+categories: mcu
 tags:
   - BootLoader
   - 单片机
