@@ -49,9 +49,9 @@
       
         <tags>
             
-            <tag> BootLoader </tag>
-            
             <tag> 单片机 </tag>
+            
+            <tag> BootLoader </tag>
             
         </tags>
       
@@ -76,9 +76,9 @@
       
         <tags>
             
-            <tag> 单片机 </tag>
-            
             <tag> link </tag>
+            
+            <tag> 单片机 </tag>
             
             <tag> logic </tag>
             
@@ -302,11 +302,11 @@
       
         <tags>
             
-            <tag> 单片机 </tag>
-            
             <tag> link </tag>
             
             <tag> debuger </tag>
+            
+            <tag> 单片机 </tag>
             
         </tags>
       
