@@ -55,7 +55,7 @@ menu:
         url: https://fzxhub.cn
       - name: fzxhub.net
         url: https://fzxhub.net
-      - name: fzxhub.gitee.io
+      - name: fzxhub.gitee
         url: https://fzxhub.gitee.io
 
   文档源:
@@ -68,6 +68,8 @@ menu:
         url: https://docs.fzxhub.cn
       - name: docs.fzxhub.net
         url: https://docs.fzxhub.net
+      - name: fzxhub.gitee
+        url: https://fzxhub.gitee.io/document
       
 
 # Website start time.
