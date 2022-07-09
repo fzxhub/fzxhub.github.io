@@ -35,14 +35,14 @@ $ brew install gdb
 
 2. 在官方Github中克隆或者下载[lv_sim_vscode_sdl](https://github.com/lvgl/lv_sim_vscode_sdl)包
 
-![lv_sim_vscode_sdl](https://cdn.jsdelivr.net/gh/fzxhub/image_bed@main/lvgl/lvgl77.jpeg)
+![lv_sim_vscode_sdl](/image/lvgl/lvgl77.jpeg)
 3. 由于lv_sim_vscode_sdl需要的lv_drivers、lv_examples、lvgl是链接的方式；在lv_sim_vscode_sdl没有实际内容，因此，我们克隆或者下载[lv_drivers](https://github.com/lvgl/lv_drivers/tree/f14e31612409fc9216892cb58eb9d851667f8a11)、[lv_examples](https://github.com/lvgl/lv_demos/tree/4d6f215c2bfd534eda744db512ea30685e5faf75)、[lvgl](https://github.com/lvgl/lvgl/tree/c597d257984e2cd3a1c883dc97a26d4512b5e60a)
 
-![lv_drivers](https://cdn.jsdelivr.net/gh/fzxhub/image_bed@main/lvgl/lvgl78.jpeg)
+![lv_drivers](/image/lvgl/lvgl78.jpeg)
 
-![lv_examples](https://cdn.jsdelivr.net/gh/fzxhub/image_bed@main/lvgl/lvgl79.jpeg)
+![lv_examples](/image/lvgl/lvgl79.jpeg)
 
-![lvgl](https://cdn.jsdelivr.net/gh/fzxhub/image_bed@main/lvgl/lvgl80.jpeg)
+![lvgl](/image/lvgl/lvgl80.jpeg)
 
 4. 在Vscode中打开文件夹lv_sim_vscode_sdl
 5. 如果是在macos使用lldb工具则在launch.json修改"MIMode"为"lldb"

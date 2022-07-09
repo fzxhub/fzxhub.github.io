@@ -3,7 +3,7 @@ title: 调试单片机的link-debuger
 date: 2021-07-8 13:34:00
 author: fzxhub
 cover: true
-img: https://cdn.jsdelivr.net/gh/fzxhub/image_bed@main/link/link4.png
+img: /image/link/link4.png
 summary: 一个小巧、多功能调试STM32、ESP32等单片机的link-debuger。
 categories: project
 tags:
@@ -35,15 +35,15 @@ tags:
 
 ## 实物展示
 
-![link实物](https://cdn.jsdelivr.net/gh/fzxhub/image_bed@main/link/links2.jpg)
+![link实物](/image/link/links2.jpg)
 
-![link实物](https://cdn.jsdelivr.net/gh/fzxhub/image_bed@main/link/links1.jpg)
+![link实物](/image/link/links1.jpg)
 
-![link实物](https://cdn.jsdelivr.net/gh/fzxhub/image_bed@main/link/links3.jpg)
+![link实物](/image/link/links3.jpg)
 
 ## 底板3D图
 
-![底板3D图](https://cdn.jsdelivr.net/gh/fzxhub/image_bed@main/link/link4.png)
+![底板3D图](/image/link/link4.png)
 
 ## 功能
 
@@ -89,7 +89,7 @@ tags:
 
 ### **接口定义**
 
-![接口定义图](https://cdn.jsdelivr.net/gh/fzxhub/image_bed@main/link/link3.png)
+![接口定义图](/image/link/link3.png)
 
 ## 支持固件类型
 
@@ -157,7 +157,7 @@ tags:
 
 9. 20PIN的JTAG接口（只支持SWD，默认不焊接，焊接20PIN贴片插针或者牛角座即可使用）
 
-![顶部3D图](https://cdn.jsdelivr.net/gh/fzxhub/image_bed@main/link/link5.png)
+![顶部3D图](/image/link/link5.png)
 
 ## 固件切换
 1. 使用自己的STLINK与link_debuger的5.0V、SWD、SCK、GND连接。
@@ -165,18 +165,18 @@ tags:
 2. 打开STM32 ST-LINK Utility
 
 3. 连接设备
-![连接设备](https://cdn.jsdelivr.net/gh/fzxhub/image_bed@main/link/prog1.png)
+![连接设备](/image/link/prog1.png)
 
 4. 打开文件
-![打开文件](https://cdn.jsdelivr.net/gh/fzxhub/image_bed@main/link/prog2.png)
+![打开文件](/image/link/prog2.png)
 
 5. 选择固件（DAP选择bootloader）
-![选择固件](https://cdn.jsdelivr.net/gh/fzxhub/image_bed@main/link/prog3.png)
+![选择固件](/image/link/prog3.png)
 
 6. 开始编程
-![开始编程](https://cdn.jsdelivr.net/gh/fzxhub/image_bed@main/link/prog4.png)
+![开始编程](/image/link/prog4.png)
 
 7. 点击start、等待进度条完成后即可使用
-![点击start](https://cdn.jsdelivr.net/gh/fzxhub/image_bed@main/link/prog5.png)
-![等待进度条](https://cdn.jsdelivr.net/gh/fzxhub/image_bed@main/link/prog6.png)
+![点击start](/image/link/prog5.png)
+![等待进度条](/image/link/prog6.png)
 

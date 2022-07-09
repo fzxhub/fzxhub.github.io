@@ -3,7 +3,7 @@ title: linux和macos搭建esp32的Vscode开发环境
 date: 2021-09-28
 author: fzxhub
 cover: true
-img: https://cdn.jsdelivr.net/gh/fzxhub/image_bed@main/esp32/anzhuang.jpg
+img: /image/esp32/anzhuang.jpg
 summary: linux和macos在VScode中搭建esp32的开发环境。
 categories: mcu
 tags:
@@ -134,21 +134,21 @@ idf.py -p PORT monitor
 
 这步没有什么要注意的，直接在商店安装即可
 
-![安装](https://cdn.jsdelivr.net/gh/fzxhub/image_bed@main/esp32/anzhuang.jpg)
+![安装](/image/esp32/anzhuang.jpg)
 
 ## 第七步：配置ESP- IDF插件
 
 1. 查看/命令面板/Congfigure ESP-IDF，就会打开一个配置界面
 2. 配置界面有三个选项：快速、可配置、使用现有；如果没有前面1-6步的操作，可以直接使用快速按钮，会下载所有使用资源及工具，ESP-IDF会从GitHub下载。我的会失败。老老实实使用前面的方法。
 
-![配置](https://cdn.jsdelivr.net/gh/fzxhub/image_bed@main/esp32/peizhi.jpg)
+![配置](/image/esp32/peizhi.jpg)
 
 > 注意：macos下安装了ESP- IDF插件后，进入配置界面没有三个配置选项，可能是插件BUG，我的隔两天再打开的时候就有配置选项了
 
 ## 第八步：编译、烧录、验证
 
 和第五步一样，我们复制一个实例工程，或者打开插件的实例工程编译、下载、测试即可。
-![实例](https://cdn.jsdelivr.net/gh/fzxhub/image_bed@main/esp32/shili.jpg)
-![按键](https://cdn.jsdelivr.net/gh/fzxhub/image_bed@main/esp32/anjian.jpg)
+![实例](/image/esp32/shili.jpg)
+![按键](/image/esp32/anjian.jpg)
 
 > 注意：linux编译通过，但是烧录会失败，会弹出提示，访问USB权限不够，原因是openocd访问USB失败，根据linux下Vcsode的提示复制60-openocd.rules到/etc/udev/rules.d/60-openocd.rules，依然不可行，我们在该文件中添加一行：KERNEL=="ttyUSB[0-9]*", MODE="0666"  然后重新插入USB就可以了

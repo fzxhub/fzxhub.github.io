@@ -3,7 +3,7 @@ title: 国内linux和macos搭建esp32的开发环境
 date: 2021-09-26
 author: fzxhub
 cover: true
-img: https://cdn.jsdelivr.net/gh/fzxhub/image_bed@main/esp32/anzhuang.jpg
+img: /image/esp32/anzhuang.jpg
 summary: 解决在国内搭建esp32的环境中容易失败的问题，亲测成功。
 categories: mcu
 tags:

@@ -45,7 +45,7 @@ menu:
         url: /friends
         icon: fas fa-link
 
-  站点:
+  博客源:
     url: https://fzxhub.com
     icon: fas fa-globe-americas
     children:
@@ -57,6 +57,17 @@ menu:
         url: https://fzxhub.net
       - name: fzxhub.gitee.io
         url: https://fzxhub.gitee.io
+
+  文档源:
+    url: https://docs.fzxhub.com
+    icon: fas fa-globe-americas
+    children:
+      - name: docs.fzxhub.com
+        url: https://docs.fzxhub.com
+      - name: docs.fzxhub.cn
+        url: https://docs.fzxhub.cn
+      - name: docs.fzxhub.net
+        url: https://docs.fzxhub.net
       
 
 # Website start time.

@@ -3,7 +3,7 @@ title: 逻辑调试器link-logic
 date: 2021-10-23 12:00:00
 author: fzxhub
 cover: true
-img: https://cdn.jsdelivr.net/gh/fzxhub/image_bed@main/logic/2.jpg
+img: /image/logic/2.jpg
 summary: 一个小巧、多功能调试STM32、ESP32等单片机的逻辑调试器。
 categories: project
 tags:
@@ -23,9 +23,9 @@ tags:
 本项目是一个link logic，用于调试带SWD接口的单片机、以及带有逻辑分析仪。是一个美观、小巧、功能全的逻辑分析仪调试器。
 
 ## 实物展示
-![avatar](https://cdn.jsdelivr.net/gh/fzxhub/image_bed@main/logic/1.png)
-![avatar](https://cdn.jsdelivr.net/gh/fzxhub/image_bed@main/logic/2.jpg)
-![avatar](https://cdn.jsdelivr.net/gh/fzxhub/image_bed@main/logic/4.jpg)
+![avatar](/image/logic/1.png)
+![avatar](/image/logic/2.jpg)
+![avatar](/image/logic/4.jpg)
 
 ## 优点
 - 小巧、多功能
@@ -45,7 +45,7 @@ tags:
 
 丝印说明：LC表示逻辑分析仪功能模块、LK表示Link功能模块、CP表示CP2102串口
 
-![avatar](https://cdn.jsdelivr.net/gh/fzxhub/image_bed@main/logic/3.png)
+![avatar](/image/logic/3.png)
 
 1. LINK调试器、逻辑分析仪、CP2102串口三大功能，LINK调试器、逻辑分析仪可分别开关操作，防止USB接口电流过大影响功能。
 2. Link调试器输出电压端可切换3.3V和5.0V，适配供电给不同的单片机
