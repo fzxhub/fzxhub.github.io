@@ -12,17 +12,17 @@ menu:
       - name: Aliyun(.cn)
         url: https://blog.fzxhub.cn
 
-  独家收藏:
-    url: https://index.fzxhub.cn
+  我的收藏:
+    url: https://tabs.fzxhub.cn
     icon: fas fa-star
     children:
       - name: Vercel(.com)
-        url: https://index.fzxhub.com
+        url: https://tabs.fzxhub.com
       - name: Github(.net)
-        url: https://index.fzxhub.net
+        url: https://tabs.fzxhub.net
       - name: Aliyun(.cn)
-        url: https://index.fzxhub.cn
-  体系文档:
+        url: https://tabs.fzxhub.cn
+  我的文档:
     url: https://docs.fzxhub.cn
     icon: fas fa-book-open
     children:
@@ -48,13 +48,13 @@ logo: /medias/logo.svg
 
 button:
   enable: true
-  index_name: 独家收藏
+  index_name: 我的收藏
   index_icon: fas fa-star
-  index_url: https://index.fzxhub.cn
+  index_url: https://tabs.fzxhub.cn
   blog_name: 我的博客
   blog_icon: fas fa-blog
   blog_url: https://blog.fzxhub.cn
-  docs_name: 体系文档
+  docs_name: 我的文档
   docs_icon: fas fa-book-open
   docs_url: https://docs.fzxhub.cn
   about_name: 关于博主
