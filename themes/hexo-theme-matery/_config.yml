@@ -32,7 +32,14 @@ menu:
         url: https://docs.fzxhub.net
       - name: Aliyun(.cn)
         url: https://docs.fzxhub.cn
-      
+  工具集合:
+      url: https://updater.fzxhub.cn
+      icon: fas fa-tools
+      children:
+        - name: Updater(.com)
+          url: https://updater.fzxhub.com
+        - name: Updater(.cn)
+          url: https://updater.fzxhub.cn     
   关于博主:
     url: /
     icon: far fa-solid fa-user
