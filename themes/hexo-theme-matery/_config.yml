@@ -2,7 +2,7 @@
 # 配置菜单导航的名称、路径和图标icon.
 menu:
   我的博客:
-    url: https://blog.fzxhub.cn
+    url: https://blog.fzxhub.com
     icon: fas fa-blog
     children:
       - name: Vercel(.com)
@@ -13,7 +13,7 @@ menu:
         url: https://blog.fzxhub.cn
 
   我的收藏:
-    url: https://tabs.fzxhub.cn
+    url: https://tabs.fzxhub.com
     icon: fas fa-star
     children:
       - name: Vercel(.com)
@@ -23,7 +23,7 @@ menu:
       - name: Aliyun(.cn)
         url: https://tabs.fzxhub.cn
   我的文档:
-    url: https://docs.fzxhub.cn
+    url: https://docs.fzxhub.com
     icon: fas fa-book-open
     children:
       - name: Vercel(.com)
@@ -33,7 +33,7 @@ menu:
       - name: Aliyun(.cn)
         url: https://docs.fzxhub.cn
   工具集合:
-      url: https://updater.fzxhub.cn
+      url: https://updater.fzxhub.com
       icon: fas fa-tools
       children:
         - name: Updater(.com)
@@ -57,13 +57,13 @@ button:
   enable: true
   index_name: 我的收藏
   index_icon: fas fa-star
-  index_url: https://tabs.fzxhub.cn
+  index_url: https://tabs.fzxhub.com
   blog_name: 我的博客
   blog_icon: fas fa-blog
-  blog_url: https://blog.fzxhub.cn
+  blog_url: https://blog.fzxhub.com
   docs_name: 我的文档
   docs_icon: fas fa-book-open
-  docs_url: https://docs.fzxhub.cn
+  docs_url: https://docs.fzxhub.com
   about_name: 关于博主
   about_icon: far fa-solid fa-user
   about_url: /
