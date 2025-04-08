@@ -7,8 +7,6 @@ menu:
     children:
       - name: Vercel(.com)
         url: https://blog.fzxhub.com
-      - name: Github(.net)
-        url: https://blog.fzxhub.net
       - name: Aliyun(.cn)
         url: https://blog.fzxhub.cn
 
@@ -18,8 +16,6 @@ menu:
     children:
       - name: Vercel(.com)
         url: https://tabs.fzxhub.com
-      - name: Github(.net)
-        url: https://tabs.fzxhub.net
       - name: Aliyun(.cn)
         url: https://tabs.fzxhub.cn
   我的文档:
@@ -28,8 +24,6 @@ menu:
     children:
       - name: Vercel(.com)
         url: https://docs.fzxhub.com
-      - name: Github(.net)
-        url: https://docs.fzxhub.net
       - name: Aliyun(.cn)
         url: https://docs.fzxhub.cn
   工具集合:
@@ -41,7 +35,7 @@ menu:
         - name: Updater(.cn)
           url: https://updater.fzxhub.cn     
   关于博主:
-    url: /
+    url: /about
     icon: far fa-solid fa-user
 
 # Configure website favicon and LOGO
@@ -66,7 +60,7 @@ button:
   docs_url: https://docs.fzxhub.com
   about_name: 关于博主
   about_icon: far fa-solid fa-user
-  about_url: /
+  about_url: /about
 
 # Website start time.
 # 站点运行开始时间.
@@ -153,6 +147,7 @@ socialLink:
   email: fzxhub@fzxmail.com
   zhihu: https://www.zhihu.com/people/fzxhub
   csdn: https://blog.csdn.net/fzxhub
+  bili: https://space.bilibili.com/438749069
   weixinmp: fzxhub
   weixinmpimg: https://cdn.jsdelivr.net/gh/fzxhub/image_bed@main/contact/weixin_public.jpg
 
@@ -261,6 +256,11 @@ myProjects:
       iconBackground: 'linear-gradient(to bottom right, #F06292 0%, #EF5350 100%)'
       url: https://github.com/fzxhub/can_tp
       desc: 一个C编写的基于CAN的ISO-TP(ISO15765-2)协议
+    Engbug:
+      icon: fas fa-drafting-compass
+      iconBackground: 'linear-gradient(to bottom right, #66BB6A 0%, #81C784 100%)'
+      url: https://github.com/fzxhub/Engbug
+      desc: Engbug是一款支持汽车控制器的CAN报文接收发送、UDS诊断、标定软件
 # config my skills informations in about page.
 # If you don't want to display this `My Skills` content, you can deactivate or delete this configuration.
 # 在“关于”页面配置"我的技能"信息，如果你不需要这些信息则可以将其设置为不激活或者将其删除.
