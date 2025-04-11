@@ -223,7 +223,7 @@ clicklove:
 profile:
   avatar: /medias/avatar.jpg
   career: Embedded Engineer
-  introduction: 精通多款单片机开发; 涉足使用硬件描述语言开发SOC; 精通USB、CAN、SPI等通信协议; 现就职于新能源汽车开发岗。
+  introduction: 一名embedded工程师，目前现就职于新能源汽车开发岗。
 
 # config my projects informations in about page.
 # If you don't want to display this `My Projects` content, you can deactivate or delete this configuration.
@@ -260,7 +260,7 @@ myProjects:
       icon: fas fa-drafting-compass
       iconBackground: 'linear-gradient(to bottom right, #66BB6A 0%, #81C784 100%)'
       url: https://github.com/fzxhub/Engbug
-      desc: Engbug是一款支持汽车控制器的CAN报文接收发送、UDS诊断、标定软件
+      desc: Engbug是一款汽车控制器的UDS诊断、标定软件
 # config my skills informations in about page.
 # If you don't want to display this `My Skills` content, you can deactivate or delete this configuration.
 # 在“关于”页面配置"我的技能"信息，如果你不需要这些信息则可以将其设置为不激活或者将其删除.
