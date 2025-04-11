@@ -31,9 +31,7 @@ menu:
       icon: fas fa-tools
       children:
         - name: Updater(.com)
-          url: https://updater.fzxhub.com
-        - name: Updater(.cn)
-          url: https://updater.fzxhub.cn     
+          url: https://updater.fzxhub.com    
   关于博主:
     url: /about
     icon: far fa-solid fa-user
