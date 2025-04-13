@@ -7,31 +7,34 @@ menu:
     children:
       - name: Vercel(.com)
         url: https://blog.fzxhub.com
+      - name: Github(.net)
+        url: https://blog.fzxhub.net
       - name: Aliyun(.cn)
         url: https://blog.fzxhub.cn
-
   我的收藏:
     url: https://tabs.fzxhub.com
     icon: fas fa-star
     children:
       - name: Vercel(.com)
         url: https://tabs.fzxhub.com
-      - name: Aliyun(.cn)
-        url: https://tabs.fzxhub.cn
+      - name: Github(.net)
+        url: https://tabs.fzxhub.net
   我的文档:
     url: https://docs.fzxhub.com
     icon: fas fa-book-open
     children:
       - name: Vercel(.com)
         url: https://docs.fzxhub.com
-      - name: Aliyun(.cn)
-        url: https://docs.fzxhub.cn
+      - name: Github(.net)
+        url: https://docs.fzxhub.net
   工具集合:
       url: https://updater.fzxhub.com
       icon: fas fa-tools
       children:
         - name: Updater(.com)
-          url: https://updater.fzxhub.com    
+          url: https://updater.fzxhub.com
+        - name: Updater(.net)
+          url: https://updater.fzxhub.net   
   关于博主:
     url: /about
     icon: far fa-solid fa-user
